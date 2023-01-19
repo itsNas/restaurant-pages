@@ -4,7 +4,7 @@ function createHeader() {
 
     const restaurantName = document.createElement("h1")
     restaurantName.classList.add("restaurant-name")
-    restaurantName.textContent = "D'Lepai Restaurant"
+    restaurantName.textContent = "D'Lepai Donut"
 
     header.appendChild(restaurantName)
     header.appendChild(createNav())
