@@ -23,3 +23,7 @@ h1 {
   background-image: url('~assets/example.png');
   background-size: cover;
 }
+
+#content {
+  background: $background-color2;
+}
