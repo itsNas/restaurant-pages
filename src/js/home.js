@@ -1,14 +1,16 @@
+import chef from "@/images/chef.png"
+
 function createHome() {
   const home = document.createElement("div")
   home.classList.add("home")
 
   const chefImage = document.createElement("img")
-  chefImage.src = "images/chef.png"
+  chefImage.src = chef
   chefImage.alt = "Chef"
 
-  home.appendChild(createParagraph("Best Doughnut in your country"))
-  home.appendChild(createParagraph("Made with passion since 1908"))
-  // home.appendChild(chefImage);
+  home.appendChild(createParagraph("Best donut in your country"))
+  home.appendChild(createParagraph("Made with passion since WW3"))
+  home.appendChild(chefImage)
   home.appendChild(createParagraph("Order online or visit us!"))
 
   return home

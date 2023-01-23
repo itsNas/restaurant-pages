@@ -1,0 +1,17 @@
+.home {
+  @include flex(column, center, center);
+  height: 525px;
+  width: 618px;
+}
+.home p {
+  padding: 1rem;
+  font-weight: bold;
+}
+
+.home img {
+  width: 50%;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  opacity: 90%;
+  border-radius: 50%;
+}

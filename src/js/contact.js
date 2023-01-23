@@ -8,13 +8,13 @@ function createContact() {
   const address = document.createElement("p")
   address.textContent = "🏠 Hollywood Boulevard 42, Los Angeles, USA"
 
-  const restaurantLocation = document.createElement("img")
-  restaurantLocation.src = "images/restaurant-location.png"
-  restaurantLocation.alt = "D'Lebai location"
+  // const restaurantLocation = document.createElement("img")
+  // restaurantLocation.src = "images/restaurant-location.png"
+  // restaurantLocation.alt = "D'Lebai location"
 
   contact.appendChild(phoneNumber)
   contact.appendChild(address)
-  contact.appendChild(restaurantLocation)
+  // contact.appendChild(restaurantLocation)
 
   return contact
 }
