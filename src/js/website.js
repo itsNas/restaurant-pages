@@ -1,5 +1,6 @@
 import loadHome from "@/js/home"
 import loadMenu from "@/js/menu"
+import loadContact from "@/js/contact"
 
 function createHeader() {
   const header = document.createElement("header")
@@ -7,7 +8,7 @@ function createHeader() {
 
   const restaurantName = document.createElement("h1")
   restaurantName.classList.add("restaurant-name")
-  restaurantName.textContent = "D'Lepai Donut"
+  restaurantName.textContent = "D'Lebai Donut"
 
   header.appendChild(restaurantName)
   header.appendChild(createNav())
@@ -44,7 +45,7 @@ function createNav() {
   contactButton.addEventListener("click", (e) => {
     if (e.target.classList.contains("active")) return
     setActiveButton(contactButton)
-    // loadContact();
+    loadContact()
     console.log("this is contact button")
   })
 
@@ -79,6 +80,9 @@ function loadWebsite() {
 
   content.appendChild(createHeader())
   content.appendChild(createMain())
+
+  setActiveButton(document.querySelector(".button-nav"))
+  loadHome()
 }
 
 export default loadWebsite

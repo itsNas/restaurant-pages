@@ -1,7 +1,47 @@
 @font-face {
-  font-family: 'Inter';
-  src: url('../fonts/Inter.ttf');
+  font-family: "Inter";
+  src: url("../fonts/Inter.ttf");
 }
 
-@import 'variables';
-@import 'scaffolding';
+@import "variables";
+@import "website";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+  line-height: 1.6;
+}
+
+body {
+  font-family: $font-family;
+  font-size: $font-size-small;
+  color: $font-color;
+  // background-image: url();
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+header {
+  font-size: $font-size-medium;
+}
+
+h1,
+h2,
+h3 {
+  line-height: $line-height;
+}
+
+img {
+  @include image();
+}
+
+button {
+  @include button();
+}
