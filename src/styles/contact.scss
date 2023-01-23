@@ -1,0 +1,14 @@
+.contact {
+  @include flex(column, center, center);
+  height: 525px;
+  width: 618px;
+  animation: fadeIn 1.5s;
+  p {
+    width: 100%;
+    padding: 1rem;
+  }
+  img {
+    max-height: 420px;
+    padding: 1rem;
+  }
+}

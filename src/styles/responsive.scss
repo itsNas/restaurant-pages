@@ -1,0 +1,26 @@
+@media (max-width: 700px) {
+  .home,
+  .contact {
+    height: 100%;
+    width: 100%;
+  }
+
+  .menu {
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+  }
+
+  .menu img {
+    width: 80%;
+  }
+}
+
+@media (max-width: 500px) {
+  html {
+    font-size: 55%;
+  }
+
+  .home img {
+    width: 80%;
+  }
+}
